@@ -1,0 +1,5 @@
+@import "./assets/fonts/stylesheet.scss";
+@import "./assets/style/_reset.scss";
+@import "./assets/style/_navbar.scss";
+@import "./assets/style/_discounts.scss";
+@import "./assets/style/_main.scss";

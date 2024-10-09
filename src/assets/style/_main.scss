@@ -1,0 +1,235 @@
+.main {
+    margin-top: 4rem;
+    width: 75%;
+
+    &__top-sales {
+        background-color: #f0f6f6;
+        padding: 3rem 3rem 5rem 3rem;
+        border-radius: 1rem;
+
+        &--title {
+            color: #248888;
+            border-bottom: 1px solid #bedada;
+            padding: 2rem 0;
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        gap: 4rem;
+        margin-top: 1.5rem;
+    }
+
+
+    &__tab {
+        font-size: 2rem;
+        color: #001C1C;
+        cursor: pointer;
+    }
+
+    &__tab.active { 
+        color: #3C5858;
+        position: relative;
+    } 
+
+    &__tab.active::after {
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        right: 50%;
+        transform: translateX(50%);
+        width: .8rem;
+        height: .8rem;
+        background-color: #FF2E4C;
+        border-radius: 50%;
+    }
+
+    &__content {
+        margin-top: 7rem;
+        &--title {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        &--subtitle {
+            font-weight: 700;
+            margin-top: 1.6rem;
+        }
+
+        &--text {
+            margin-top: 1.2rem;
+            font-size: 1.7rem;
+            color: #3C5858
+        }
+
+        &--show-more {
+            font-size: 1.7rem;
+            color: #607282;
+            margin-top: 1.2rem;
+            cursor: pointer;
+            transition: .2s color;
+        }
+
+        &--show-more:hover {
+            color: #001C1C;
+        }
+
+        &--hidden-part {
+            height: 0;
+            overflow: hidden;
+            transition: .2s height;
+        }
+
+        &--hidden-part.show {
+            height: auto;
+        }
+    }
+
+    &__faq {
+        margin-top: 6rem;
+        &--title {
+            font-size: 4.4rem;
+            font-weight: 700;
+        }
+        &--content {
+            display: flex;
+            flex-direction: column;
+        }
+        &--box {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            transition: .2s all;
+            border-bottom: 1px solid #BEDADA;
+
+            &--question {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2.5rem 0 1.5rem 0;
+
+                & p {
+                    font-size: 2rem;
+                    color: #3C5858;
+                    transition: .2s all;
+                }
+
+                & span {
+                    transition: .2s all;
+                }
+            }
+
+            &--answer {
+                margin-left: 8rem;
+                height: 0;
+                transition: .2s all;
+                padding-bottom: 0;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .tab-content {
+        display: none;
+        margin-top: 3rem;
+    }
+    
+    .tab-content.active {
+        display: block;
+    }
+}
+
+.main__faq--box.active {
+    .main__faq--box--question {
+        p {
+            font-weight: 700;
+            color: #023131;
+        }
+
+        span {
+            transform: rotate(45deg);
+        }
+    }
+
+    .main__faq--box--answer {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+}
+
+.main__faq--box:hover {
+    .main__faq--box--question {
+        p {
+            font-weight: 700;
+            color: #023131;
+        }
+    }
+}
+
+.swiper-container {
+    position: relative;
+}
+
+.swiper-pagination {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+    bottom: -3.5rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-pagination-bullet {
+    width: 0.6rem !important;
+    height: 0.6rem !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 0.8rem !important;
+    height: 0.8rem !important;
+    background-color: #607282 !important;
+}
+
+.swiper-button-next {
+    position: absolute !important;
+    right: -5.5rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background-color: #607282 !important;
+    width: 4.8rem !important;
+    height: 4.8rem !important;
+    border-radius: 50%;
+}
+
+.swiper-button-prev {
+    position: absolute !important;
+    left: -5.5rem !important;
+    top: 50% !important;
+    background-color: #607282 !important;
+    width: 4.8rem !important;
+    height: 4.8rem !important;
+    border-radius: 50%;
+    transform: translateY(-50%) rotate(180deg) !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none !important;
+}
+
+@media (max-width: 1000px) {
+    .main {
+        width: 100%;
+
+        &__faq {
+            margin-bottom: 5rem;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+}

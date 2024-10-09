@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/index.css">
+        <link rel="stylesheet" href="./src/assets/swiper/swiper-bundle.min.css">
+        <title>Vite + Solid</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <span class="navbar__title"><a href="#">Logo</a></span>
+                <ul class="navbar__list">
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 6H21" stroke="#FF2E4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 12H21" stroke="#FF2E4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 18H21" stroke="#FF2E4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 6H3.01" stroke="#FF2E4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 12H3.01" stroke="#FF2E4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 18H3.01" stroke="#FF2E4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Все предложения
+                        </a>
+                    </li>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Промокоды</a></li>
+                    <li><a href="#">Кешбэк</a></li>
+                </ul>
+                <div class="navbar__actions">
+                    <div class="navbar__actions--group">
+                        <span class="navbar__actions--item"><img src="./src/assets/icons/lupa.svg" alt=""></span>
+                        <span class="navbar__actions--item navbar__actions--item-mob"><img src="./src/assets/icons/tg.svg" alt=""></span>
+                        <span class="navbar__actions--item navbar__actions--item-mob"><img src="./src/assets/icons/user.png" alt=""></span>
+                        <span class="navbar__actions--item"><img src="./src/assets/icons/lupa.svg" alt=""></span>
+                    </div>
+                    <button class="navbar__actions--button">Добавить скидку <span class="navbar__actions--button--img"><img src="./src/assets/icons/plus.png" alt=""></span></button>
+                    <span class="burger-menu"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="mobile-dropdown">
+            <span class="navbar__title"><a href="#">Logo</a></span>
+        </div>
+        <div style="border-bottom: dashed 2px #bedada;"></div>
+
+        <div class="container">
+            <div class="content">
+                <div class="discounts">
+                    <h1 class="discounts__title">Скидки дня</h1>
+                    <p class="discounts__count">23 предложения</p>
+
+                    <div class="discounts__cards">
+                        <div class="discounts__card">
+                            <div class="discounts__card--img"><img src="./src/assets/brands/korzinka.png" alt=""></div>
+                            <div class="discounts__card--content">
+                                <p class="discounts__card--title">korzinka.uz</p>
+                                <p class="discounts__card--text">В четверг скидки на рыбу</p>
+
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <p class="discounts__card--cut-text">Скидки</p>
+                                    <div class="discounts__card--cut">
+                                        <span>Кешбэк</span>
+                                        <span>3%</span>
+                                    </div>
+                                </div>
+                                <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Супермаркеты</p>
+                            
+                            </div>
+                        </div>
+                        <div class="discounts__card">
+                            <div class="discounts__card--img"><img src="./src/assets/brands/mango.png" alt=""></div>
+                            <div class="discounts__card--content">
+                                <p class="discounts__card--title">MANGO</p>
+                                <p class="discounts__card--text">Акция 1+1</p>
+
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <p class="discounts__card--cut-text">Скидки</p>
+                                    <div class="discounts__card--cut">
+                                        <span>Кешбэк</span>
+                                        <span>3%</span>
+                                    </div>
+                                </div>
+                                <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Магазины брендовой одежды</p>
+                            
+                            </div>
+                        </div>
+                        <div class="discounts__card">
+                            <div class="discounts__card--img"><img src="./src/assets/brands/texnomart.png" alt=""></div>
+                            <div class="discounts__card--content">
+                                <p class="discounts__card--title">TEXNOMART</p>
+                                <p class="discounts__card--text">До — 60% на бытовую технику в ТЦ «Samarkand Darvoza»</p>
+
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <p class="discounts__card--cut-text">Скидки</p>
+                                    <div class="discounts__card--cut">
+                                        <span>Кешбэк</span>
+                                        <span>3%</span>
+                                    </div>
+                                </div>
+                                <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Магазины электроники и бытовой техники</p>
+                            
+                            </div>
+                        </div>
+                        <div class="discounts__card">
+                            <div class="discounts__card--img"><img src="./src/assets/brands/makro.png" alt=""></div>
+                            <div class="discounts__card--content">
+                                <p class="discounts__card--title">Makro</p>
+                                <p class="discounts__card--text">При покупке CIF пачка губок Salixan БЕСПЛАТНО</p>
+
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <p class="discounts__card--cut-text">Скидки</p>
+                                    <div class="discounts__card--cut">
+                                        <span>Кешбэк</span>
+                                        <span>3%</span>
+                                    </div>
+                                </div>
+                                <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Супермаркеты</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="discounts__show-more">Показать все <span class="discounts__show-more--img"><img src="./src/assets/icons/plus.png" alt=""></span></button>
+                </div>
+                <div class="main">
+                    <div class="main__top-sales">
+                        <h1 class="main__top-sales--title">Топовые скидки</h1>
+                        <div class="main__tabs">
+                            <p class="main__tab active" onclick="openTab(event, 'tab1')">Питание</p>
+                            <p class="main__tab" onclick="openTab(event, 'tab2')">Связь</p>
+                            <p class="main__tab" onclick="openTab(event, 'tab3')">Магазины</p>
+                        </div>
+
+                        <div id="tab1" class="tab-content active swiper-container">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide discounts__card">
+                                        <div class="discounts__card--img"><img src="./src/assets/brands/gosty.png" alt=""></div>
+                                        <div class="discounts__card--content">
+                                            <p class="discounts__card--title">korzinka.uz</p>
+                                            <p class="discounts__card--text">В четверг скидки на рыбу</p>
+            
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <p class="discounts__card--cut-text">Скидки</p>
+                                                <div class="discounts__card--cut">
+                                                    <span>Кешбэк</span>
+                                                    <span>3%</span>
+                                                </div>
+                                            </div>
+                                            <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Супермаркеты</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide discounts__card">
+                                        <div class="discounts__card--img"><img src="./src/assets/brands/shosh.png" alt=""></div>
+                                        <div class="discounts__card--content">
+                                            <p class="discounts__card--title">MANGO</p>
+                                            <p class="discounts__card--text">Акция 1+1</p>
+            
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <p class="discounts__card--cut-text">Скидки</p>
+                                                <div class="discounts__card--cut">
+                                                    <span>Кешбэк</span>
+                                                    <span>3%</span>
+                                                </div>
+                                            </div>
+                                            <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Магазины брендовой одежды</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide discounts__card">
+                                        <div class="discounts__card--img"><img src="./src/assets/brands/petrovic.png" alt=""></div>
+                                        <div class="discounts__card--content">
+                                            <p class="discounts__card--title">TEXNOMART</p>
+                                            <p class="discounts__card--text">До — 60% на бытовую технику в ТЦ «Samarkand Darvoza»</p>
+            
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <p class="discounts__card--cut-text">Скидки</p>
+                                                <div class="discounts__card--cut">
+                                                    <span>Кешбэк</span>
+                                                    <span>3%</span>
+                                                </div>
+                                            </div>
+                                            <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Магазины электроники и бытовой техники</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide discounts__card">
+                                        <div class="discounts__card--img"><img src="./src/assets/brands/makro.png" alt=""></div>
+                                        <div class="discounts__card--content">
+                                            <p class="discounts__card--title">Makro</p>
+                                            <p class="discounts__card--text">При покупке CIF пачка губок Salixan БЕСПЛАТНО</p>
+            
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <p class="discounts__card--cut-text">Скидки</p>
+                                                <div class="discounts__card--cut">
+                                                    <span>Кешбэк</span>
+                                                    <span>3%</span>
+                                                </div>
+                                            </div>
+                                            <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Супермаркеты</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide discounts__card">
+                                        <div class="discounts__card--img"><img src="./src/assets/brands/korzinka.png" alt=""></div>
+                                        <div class="discounts__card--content">
+                                            <p class="discounts__card--title">korzinka.uz</p>
+                                            <p class="discounts__card--text">В четверг скидки на рыбу</p>
+            
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <p class="discounts__card--cut-text">Скидки</p>
+                                                <div class="discounts__card--cut">
+                                                    <span>Кешбэк</span>
+                                                    <span>3%</span>
+                                                </div>
+                                            </div>
+                                            <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Супермаркеты</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide discounts__card">
+                                        <div class="discounts__card--img"><img src="./src/assets/brands/mango.png" alt=""></div>
+                                        <div class="discounts__card--content">
+                                            <p class="discounts__card--title">MANGO</p>
+                                            <p class="discounts__card--text">Акция 1+1</p>
+            
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <p class="discounts__card--cut-text">Скидки</p>
+                                                <div class="discounts__card--cut">
+                                                    <span>Кешбэк</span>
+                                                    <span>3%</span>
+                                                </div>
+                                            </div>
+                                            <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Магазины брендовой одежды</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide discounts__card">
+                                        <div class="discounts__card--img"><img src="./src/assets/brands/texnomart.png" alt=""></div>
+                                        <div class="discounts__card--content">
+                                            <p class="discounts__card--title">TEXNOMART</p>
+                                            <p class="discounts__card--text">До — 60% на бытовую технику в ТЦ «Samarkand Darvoza»</p>
+            
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <p class="discounts__card--cut-text">Скидки</p>
+                                                <div class="discounts__card--cut">
+                                                    <span>Кешбэк</span>
+                                                    <span>3%</span>
+                                                </div>
+                                            </div>
+                                            <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Магазины электроники и бытовой техники</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide discounts__card">
+                                        <div class="discounts__card--img"><img src="./src/assets/brands/makro.png" alt=""></div>
+                                        <div class="discounts__card--content">
+                                            <p class="discounts__card--title">Makro</p>
+                                            <p class="discounts__card--text">При покупке CIF пачка губок Salixan БЕСПЛАТНО</p>
+            
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <p class="discounts__card--cut-text">Скидки</p>
+                                                <div class="discounts__card--cut">
+                                                    <span>Кешбэк</span>
+                                                    <span>3%</span>
+                                                </div>
+                                            </div>
+                                            <p style="margin-top: 0.4rem;" class="discounts__card--cut-text">Супермаркеты</p>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next">
+                                <img src="./src/assets/icons/pagination-next.png" alt="">
+                            </div>
+                            <div class="swiper-button-prev">
+                                <img src="./src/assets/icons/pagination-next.png" alt="">
+                            </div>
+                        </div>
+
+                        <div id="tab2" class="tab-content">
+                            Tab 2 (Связь)
+                        </div>
+                        <div id="tab3" class="tab-content">
+                            Tab 3 (Магазины)
+                        </div>
+                    </div>
+
+                    <div class="main__content">
+                        <h1 class="main__content--title">Добро пожаловать на сайт</h1>
+
+                        <p class="main__content--subtitle">Ваш надёжный помощник в поиске лучших скидок и акций различных компаний!</p>
+                        <p class="main__content--text">Мы собрали для вас все самые выгодные предложения, чтобы вы могли сэкономить свои деньги и получить максимум удовольствия от покупок.</p>
+                        <p class="main__content--hidden-part main__content--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis necessitatibus perspiciatis, tempore reiciendis quia non quod labore dicta a atque corporis quae modi temporibus id nisi ipsa odit ea <br> ex suscipit praesentium nulla quidem quasi vitae reprehenderit! Error officia numquam cum doloribus repellendus ea magnam pariatur voluptatibus at, quidem porro dolores magni soluta qui, iusto quo minima accusamus minus sapiente laboriosam excepturi! Eos quibusdam maiores cupiditate debitis praesentium quia enim autem aspernatur libero, ratione est, nostrum assumenda. Veniam itaque quis repellat eaque rerum beatae cumque, atque non tenetur. Amet, odit numquam, deserunt voluptatum placeat voluptates id atque <br> totam, dolorem explicabo consectetur ipsa maiores sit consequatur cupiditate enim. Iusto reiciendis, eos dolor a obcaecati veniam repudiandae eaque officiis optio quisquam quod accusantium inventore? Fugit, cum distinctio voluptatibus inventore dolores obcaecati delectus provident odit aut, sed debitis atque sit, laboriosam non nobis! Quam deleniti atque excepturi nemo <br> error ratione tempora voluptatem asperiores explicabo porro, praesentium maxime aut repellat iste odit, quod, velit dolores suscipit eligendi sed alias. Modi dolorem odit aspernatur, aut est impedit molestiae ipsum incidunt rerum aperiam accusantium adipisci hic, amet beatae illo quod omnis perspiciatis dolore soluta non! Harum nobis distinctio iste quos cupiditate eius veniam quidem ratione saepe.</p>
+                        
+                        <p class="main__content--show-more">Развернуть текст</p>
+                    </div>
+
+                    <div class="main__faq">
+                        <h1 class="main__faq--title">FAQ</h1>
+                        
+                        <div class="main__faq--content">
+                            <div class="main__faq--box">
+                                <div class="main__faq--box--question">
+                                    <p>Какие компании представлены на сайте?</p>
+                                    <span class="main__faq--box--toggle"><img src="./src/assets/icons/FAQ.png" alt=""></span>
+                                </div>
+                                <div class="main__faq--box--answer">
+                                    <p>Чтобы быть в курсе новых скидок и акций на сайте, вы можете подписаться на наш телеграм-канал или следить за новостями.</p>
+                                    <br>
+                                    <p>Мы регулярно отправляем информацию о новых предложениях и акциях нашим подписчикам, чтобы они всегда могли быть в курсе последних скидок и эксклюзивных предложений.</p>
+                                    <br>
+                                    <p>Также можно регулярно посещать сайт и проверять разделы с акциями и скидками</p>
+                                </div>
+                            </div>
+                            <div class="main__faq--box active">
+                                <div class="main__faq--box--question">
+                                    <p>Как я могу быть в курсе новых скидок и акций на сайте?</p>
+                                    <span class="main__faq--box--toggle"><img src="./src/assets/icons/FAQ.png" alt=""></span>
+                                </div>
+                                <div class="main__faq--box--answer">
+                                    <p>Чтобы быть в курсе новых скидок и акций на сайте, вы можете подписаться на наш телеграм-канал или следить за новостями.</p>
+                                    <br>
+                                    <p>Мы регулярно отправляем информацию о новых предложениях и акциях нашим подписчикам, чтобы они всегда могли быть в курсе последних скидок и эксклюзивных предложений.</p>
+                                    <br>
+                                    <p>Также можно регулярно посещать сайт и проверять разделы с акциями и скидками</p>
+                                </div>
+                            </div>
+                            <div class="main__faq--box">
+                                <div class="main__faq--box--question">
+                                    <p>Могу ли я поделиться найденными скидками и акциями с друзьями?</p>
+                                    <span class="main__faq--box--toggle"><img src="./src/assets/icons/FAQ.png" alt=""></span>
+                                </div>
+                                <div class="main__faq--box--answer">
+                                    <p>Чтобы быть в курсе новых скидок и акций на сайте, вы можете подписаться на наш телеграм-канал или следить за новостями.</p>
+                                    <br>
+                                    <p>Мы регулярно отправляем информацию о новых предложениях и акциях нашим подписчикам, чтобы они всегда могли быть в курсе последних скидок и эксклюзивных предложений.</p>
+                                    <br>
+                                    <p>Также можно регулярно посещать сайт и проверять разделы с акциями и скидками</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+
+<script src="./src/assets/swiper/swiper-bundle.min.js"></script>
+<script src="./src/script.js"></script>
+</html>
